@@ -24,7 +24,7 @@ int main(int argc, char *argv[]){
     fprintf(output_image, "P3\n%i %i\n255\n", image_width, image_height);
 
 
-    Sphere obj = {{0, 0, 10}, 50};
+    Sphere obj = {{0, 0, 51}, 50};
 
 
     for(int y = image_height/-2; y < image_height/2; y++){
@@ -35,7 +35,7 @@ int main(int argc, char *argv[]){
             for(float j = 0; j < 1; j += 1.0 / antialiasing){
                 for(float i = 0; i < 1; i += 1.0 / antialiasing){
 
-                    Vector raio = {{x+i, y+j, 0}, {0, 0, 1}};
+                    Vector raio = {{0, 0, 0}, {x+i, y+j, image_width/2}};
 
                     if(sphere_collision(obj, raio)){
                         pixel.r += 0; // 44
