@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-// #include "scene.c"
 #include "objects.c"
 
 
@@ -14,13 +13,8 @@ int main(int argc, char *argv[]){
     int image_width = DEFAULT_IMAGE_WIDTH;
     int image_height = DEFAULT_IMAGE_HEIGHT;
 
-    // FILE *scene_file = fopen(INPUT_SCENE_NAME, "r");
     FILE *output_image = fopen(OUTPUT_IMAGE_NAME, "w");
 
-    // if(scene_file == NULL){
-    //     printf("Houve um erro ao ler o aquivo \"%s\"\n", INPUT_SCENE_NAME);
-    //     return 1;
-    // }
     if(output_image == NULL){
         printf("Houve um erro ao criar o aquivo \"%s\"\n", OUTPUT_IMAGE_NAME);
         return 1;
