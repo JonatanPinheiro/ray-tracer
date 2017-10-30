@@ -3,7 +3,7 @@
 
 
 typedef struct point{
-    int x, y, z;        // Coordinates
+    float x, y, z;        // Coordinates
 } Point;
 
 typedef struct vector{
@@ -17,7 +17,7 @@ typedef struct sphere{
 } Sphere;
 
 typedef struct color{
-    float r, g, b;      // Red, Green, Blue
+    int r, g, b;      // Red, Green, Blue
 } Color;
 
 
